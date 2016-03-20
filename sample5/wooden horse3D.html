@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3D旋转木马</title>
+	<link rel="stylesheet" type="text/css" href="css/main3d.css">
+	<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main3d.js"></script>
+</head>
+<body>
+	<div class="J_Poster poster-main" data-setting='{	"width":1100,
+												  		"height":406,
+												  		"postetWidth":650,
+												  		"posterHeight":406,
+												  		"scale":0.9,
+												  		"speed":500,
+												  		"verticalAlign":"middle"}'>
+			<!-- 轮播图左右旋转按钮 -->
+			<div class="poster-btn poster-prev-btn" id="">  </div>
+			<ul class="poster-list">
+				<li class="poster-item">
+					<a href=""><img src="picture/image1.jpg" width="100%"></a>
+				</li>
+				<li class="poster-item">
+					<a href=""><img src="picture/image2.jpg" width="100%"></a>
+				</li>
+				<li class="poster-item">
+					<a href=""><img src="picture/image3.jpg" width="100%"></a>
+				</li>
+				<li class="poster-item">
+					<a href=""><img src="picture/image4.jpg" width="100%"></a>
+				</li>
+				<li class="poster-item">
+					<a href=""><img src="picture/image5.jpg" width="100%"></a>
+				</li>
+				<li class="poster-item">
+					<a href=""><img src="picture/image6.jpg" width="100%"></a>
+				</li>
+				<li class="poster-item">
+					<a href=""><img src="picture/image7.jpg" width="100%"></a>
+				</li>
+				<li class="poster-item">
+					<a href=""><img src="picture/image8.jpg" width="100%"></a>
+				</li>
+				<li class="poster-item">
+					<a href=""><img src="picture/image9.jpg" width="100%"></a>
+				</li>
+			</ul>
+			<div class="poster-btn poster-next-btn" id=""> </div>
+		</div>
+	</div>
+
+	<script type="text/javascript"> 
+	  $(function(){
+	  	Carousel.init($('.J_Poster'));
+	  });
+	</script>
+</body>
+</html>

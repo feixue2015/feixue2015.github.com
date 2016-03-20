@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #333;
+}
+.main{
+	width:90%;
+	min-width: 800px;
+	height: 600px;
+	margin: 50px auto;
+	position: relative;
+}
+.main-box{
+    width: 600px;
+	height: 400px;
+	position: relative;
+	top: 100px;
+	margin:0  auto;
+	background:green;
+}
+/*轮播按钮*/
+.leftbtn,.rightbtn{
+	width: 10%;
+	height: 400px;
+	position: absolute;
+	top: 0;
+  	background:rgba(0,13,13,0.89);
+}
+.leftbtn{
+	left:-10%;
+}
+.rightbtn{
+	right:-10%;
+}
+.leftbtn:hover,.rightbtn:hover{
+  box-shadow: 0 0 3px rgba(0,13,13,0.89);
+}
+
+.right_btn,.left_btn{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+
+}
+.right_btn{
+	background: url('../picture/right.png') no-repeat;
+	background-position:50% 50%;
+}
+.left_btn{
+	background: url('../picture/left.png') no-repeat;
+	background-position: 50% 50%;
+}
+.right_btn:hover{
+	background-size: 90px 90px;
+}
+.left_btn:hover{
+	background-size:90px 90px;
+}
+/*轮播图*/
+.imagebox{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.imagebox ul{
+	list-style: none;
+	height: 100%;
+	width:500%;
+	position: absolute;
+	top: 0;
+	/*left: 0;*/
+}
+.imagebox ul li{
+	height: 100%;
+	width:20%;
+	float: left;
+}
+.imagebox ul li img{
+	width: 100%;
+	height: 100%;
+}
+.main-box .index{
+	width: 300px;
+	height: 34px;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -150px;
+}
+.index span{
+	float: left;
+	width:50px;
+	height: 8px;
+	margin-top:13px; 
+	background:#fff;
+}
+.index .spanclass{
+	background: red;
+}
+.index span:nth-child(1){
+	margin-left: 10px;
+}
+.index span:nth-child(2){
+	margin:13px 5px 0;
+}
+.index span:nth-child(3){
+	margin:13px 5px 0;
+}
+.index span:nth-child(4){
+	margin:13px 5px 0;
+}
+.index span:nth-child(5){
+	margin-right: 10px;
+}

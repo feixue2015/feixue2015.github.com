@@ -1,0 +1,189 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*//主题背景*/
+.backgd{
+	overflow: hidden;
+/*	position: fixed;
+	top:0;
+	left: 0;*/
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -10;
+}
+/*//切换背景按钮*/
+.changeStyle{
+	width: 30px;
+	height: 30px;
+	background: url('../image/house.png');
+	border: 1px solid red;
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	text-indent: 100;
+}
+
+body{
+	width: 100%;
+	min-width: 900px;
+	position: relative;
+}
+/*我的信息*/
+.main{
+	width: 100%;
+	min-height:1000px;
+}
+.main .head{
+	width: 100%;
+	height: 140px;
+}
+.head .myinfor{
+	width: 100%;
+	height: 100%;
+}
+.myinfor .my,.myinfor .works{
+	height: 100%;
+	float: left;
+}
+/*我的名字*/
+.myinfor .my{
+	width:35%;
+}
+.my .name{
+	width: 260px;
+	height: 80px;
+	margin:30px auto;
+
+}
+.name span{
+	float: left;
+	height: 80px;
+	line-height: 80px;
+}
+.name .headPortrait{
+	width: 80px;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	border: 3px solid red;
+	background: url('../image/head.jpg');
+	background-position:-66px -32px;
+	box-sizing:border-box;
+}
+.name .fullname{
+	width: 180px;
+	text-align: center;
+	font-size:30px;
+	letter-spacing: 6px;
+	cursor: pointer;
+}
+.name:hover .fullname{
+	font-size:35px;
+	text-shadow:3px 3px 5px #000000;
+}
+/*我的作品*/
+.myinfor .works{
+	width:65%;
+}
+
+/*我的导航栏*/
+.main .list{
+	width: 100%;
+	height: 100px;
+}
+.list .img-list{
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+}
+.list .img-list .img-box{
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin: 10px 0 10px 0;
+	position: relative;
+}
+
+.img-box span{
+	display: inline-block;
+	width: 50px;
+	height:50px;	
+	margin:15px;
+	transition:transform 0.8s;
+	-webkit-transition:transform 0.2s;
+}
+.img-box .one{
+	background: url('../image/home.png');	
+}
+.img-box .two{
+	background: url('../image/calendar.png');
+}
+.img-box .three{
+	background: url('../image/email.png');
+}
+.img-box .one,.img-box .two,.img-box .three{
+	background-position: 0px 5px;
+	background-size: 100% 100%;
+}
+.img-box b{
+	display: inline-block;
+	width:100%;
+	height: 20px;
+	font-size: 15px;
+	text-align: center;
+	font-weight: lighter;
+	position: absolute;
+	top: -22px;
+	left: 0;
+    /*opacity: 0;*/
+    transform:scale(0,0);
+	transition:transform 0.8s;
+	-webkit-transition:transform 0.2s;
+}
+
+.main .introduces{
+	width: 100%;
+}
+
+.introduces .my-int{
+	width: 80%;
+	height: 100%;
+	min-height: 1000px;
+	margin: 0 auto;
+	padding:0  30px 25px;
+	box-sizing:border-box;
+	background: url('../image/table.jpg');
+	background-size:100% 100%;
+}
+.introduces .my-int-1{
+	width: 80%;
+	height: 100%;
+	min-height: 1000px;
+	margin: 0 auto;
+	padding:0  30px 25px;
+	box-sizing:border-box;
+}
+.my-int h3{
+	line-height: 40px;
+	font-size: 20px;
+}
+.my-int table{
+	width: 80%;
+	border-collapse:collapse;
+}
+.my-int table td{
+	width: 20%;
+	height: 35px;
+	line-height: 35px;
+	background: #D9B479;
+	opacity: 0.6;
+	font-weight: bolder;
+}
+.my-int table td ul{
+	list-style: none;
+}
+

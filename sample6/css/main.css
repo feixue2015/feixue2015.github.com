@@ -1,0 +1,10 @@
+*{
+	margin:0;
+	padding: 0;
+}
+.carvas-box{
+	width: 1000px;
+	height: 600px;
+    margin:20px auto;
+    background: #333;
+}

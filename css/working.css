@@ -1,0 +1,169 @@
+.my-int-1 .working-box{
+	width:100%;
+	height:580px;
+	margin: 0 auto;
+	background:rgba(9,9,9,0.64);
+	box-shadow: 0 0 30px #000000;
+	position: relative;
+}
+.working-box .list{
+	width: 33.3%;
+	height: 240px;
+	position: absolute;
+}
+.working-box .lists{
+	width: 33.3%;
+	height: 240px;
+	position: absolute;
+}
+.list:nth-child(1){
+	top:30px;
+	left:0.1%;
+}
+.list:nth-child(2){
+	top:30px;
+	left:33.3%;
+}
+.list:nth-child(3){
+	top:30px;
+	left:66.6%;
+}
+.list:nth-child(4){
+	top:290px;
+	left:0.1%;
+}
+.list:nth-child(5){
+	top:290px;
+	left:33.3%;
+}
+.list:nth-child(6){
+	top:290px;
+	left:66.6%;
+}
+.lists-1{
+	top:550px;
+	left:0.1%;
+}
+.lists-2{
+	top:550px;
+	left:33.3%;
+}
+.lists-3{
+	top:550px;
+	left:66.6%;
+}
+.list .list-box ,.lists .list-box{
+	width: 90%;
+	height: 90%;
+	margin: 5% auto;
+	background: rgba(225,225,225,0.92);
+	border-radius: 3%;
+	-webkit-border-radius: 3%;
+}
+.list .list-box:hover ,.lists .list-box:hover{
+	box-shadow:0 0 5px #fff;
+}
+.list-box .image{
+	width: 80%;
+	height: 80%;
+	position: relative;
+	margin:0 auto;
+	top: 10%;
+	overflow: hidden;
+}
+.image .title{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	background:rgba(9,9,9,0.64);
+	position: absolute;
+	left: 0;
+	bottom:-30px;
+	transition:bottom 0.7s;
+}
+.title span{
+	color: #fff;
+	font-size: 13px;
+}
+.list .list-box:hover .title{
+	bottom: 0px;
+}
+.lists .list-box:hover .title{
+	bottom: 0px;
+}
+
+.mark{
+	background:rgba(9,9,9,0.74); 
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+.mark .mark-box{
+	width: 80%;
+	height: 85%;
+	margin: 5%;
+	position: relative;
+
+}
+.mark .markbtn{
+	width: 32px;
+	height: 32px;
+	border-radius: 100%;
+	background: #fff url('../image/close.png') no-repeat;
+	background-position: 0px 0px;
+	position: absolute;
+	top: -13px;
+	right:-13px;
+	z-index: 1005; /*弹窗关闭按钮*/
+	cursor: pointer;
+}
+.mark .markbtn:hover{
+	background: #fff url('../image/close1.png') no-repeat;
+	background-position: 0px 1px;
+}
+.mark-box .container{
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	position: relative;
+}
+.container .openmark{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1003;  /* 作品显示遮罩层*/
+	background: rgba(9,9,9,0.78) ;
+	background-position: 50% 50%;
+}
+.openmark .openbtn{
+	width: 64px;
+	height: 64px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1004;  /* 作品显示开关按钮*/
+	margin-left: -32px;
+	margin-top: -32px;
+	border-radius: 100%;
+	background:#fff url('../image/openbtn1.png') no-repeat; 
+	cursor: pointer;
+}
+.openmark .openbtn:hover{
+	background:url('../image/openbtn2.png') no-repeat; 
+}
+@keyframes animation1{
+	0%{
+		transform:translate(-900px,900px);
+	}
+	100%{
+		transform:translate(0px,0px);
+	}
+}
+.iframeclass{
+	height: 100%;
+	width: 100%;
+}
+
