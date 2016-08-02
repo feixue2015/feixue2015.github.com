@@ -1,0 +1,123 @@
+@charset "utf-8";
+/基本框架CSS*/
+body, ul, dl, dd, dt, ol, li, p, h1, h2, h3, h4, h5, h6, textarea, form, select, fieldset, table, td, div, input {margin:0;padding:0;-webkit-text-size-adjust: none}
+h1, h2, h3, h4, h5, h6{font-size:12px;font-weight:normal}
+body>div{margin:0 auto}
+div {text-align:left}
+a img {border:0}
+body { color: #333; text-align: center; font: 12px "宋体"; }
+ul, ol, li {list-style-type:none;vertical-align:0}
+a {outline-style:none;color:#535353;text-decoration:none}
+.pageNav{
+	text-align: center;
+}
+.pagebtn{
+	height: 80px;
+	display: inline-block;
+	zoom:1;
+	margin: 0;
+}
+.list{
+	float: left;
+	height: 46px;
+	margin: 17px auto;
+}
+.list a{
+	float: left;
+	width:46px;
+	height: 46px;
+	text-align: center;
+	line-height: 46px;
+	margin: 0 5px;
+	border-radius: 50%;
+	background:url(../images/btn.jpg) no-repeat;
+	background-position: -2px -1px;
+	background-size: 109%;
+	cursor: pointer;
+}
+.list a.on{
+	color: red;
+}
+.list b{
+	float: left;
+	display: inline-block;
+	height: 46px;
+	line-height: 46px;
+	line-height: 46px;
+}
+
+.list a.last,.list a.prev{
+	width: 58px;
+}
+.inputs{
+	float: left;
+	height: 46px;
+	margin: 17px 0;
+	line-height: 46px;
+	font-size: 18px;
+}
+.inputPage{
+	width: 40px;
+	height: 19px;
+	text-indent: 5px;
+}
+#sure{
+	width: 35px;
+	height: 23px;
+	border: 1px solid #babcbd;
+	background:#babcbd;
+}
+/*内容*/
+.contain{
+	width: 1200px;
+	height: 1550px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-top: 20px;
+	padding-left: 15px;
+	padding-bottom: 20px;
+}
+.contain .goods{
+	width: 210px;
+	height: 290px;
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 18px;
+	border: 2px solid #fff;
+	padding: 5px;
+	transition:all 0.6s;
+	box-sizing:border-box;
+}
+.contain .goods:hover{
+	border: 2px solid red;
+	box-shadow: 3px 7px 3px red;
+}
+.images{
+	width: 100%;
+	height: 220px;
+}
+.images img{
+	width: 100%;
+	height:100%;
+}
+.name{
+	height: 30px;
+	line-height: 30px;
+	font-size: 20px;
+}
+.name a:hover{
+	color: red;
+	text-decoration: underline;
+}
+.price {
+	height: 30px;
+	line-height: 30px;
+	font-size: 18px;
+}
+.price a{
+	color: #333;
+	text-decoration: underline;
+}
+.price a:hover{
+	color: red;
+}
