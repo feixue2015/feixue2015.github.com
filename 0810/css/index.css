@@ -1,0 +1,89 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+	height: 680px;
+	background:url(../images/back.jpg) no-repeat;
+	background-size: 100%;
+}
+.box{
+	width: 100%;
+	height: 100%;
+	
+	position: relative;
+
+}
+.star{
+	width: 300px;
+	height: 300px;
+	background: url(../images/star.png) no-repeat;
+	background-size: 105%;
+	background-position: -7px -6px;
+	border-radius: 100%;
+	box-shadow: 0 0 50px #fff;
+	position: absolute;
+	left:50%;
+	top: 50%;
+	margin-top: -150px;
+	margin-left: -150px;
+	-webkit-transform-style:preserve-3d;
+	transform-style:preserve-3d;
+	-webkit-perspective-origin:50% 50% ;
+	perspective-origin:50% 50%;
+	perspective: 400;
+	-webkit-perspective: 400;
+	transform:rotateZ(25deg);
+}
+.line{
+	width: 600px;
+	height: 600px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -300px;
+	margin-top: -300px;
+	border-radius: 100%;
+	transform:rotateZ(19deg) rotateX(83deg) rotateY(-17deg) translateZ(20px) ;
+	box-shadow: 0 0 10px #fff;
+}
+.list{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -30px;
+	margin-top: -30px;
+	width: 60px;
+	height:60px;
+	border-radius: 100%;
+	background:red url(../images/ball1.png)0px 0px no-repeat;
+	background-size: 190%;
+	background-position:-26px -28px;
+	box-shadow: 0 0 30px #e8a120a1;
+	transform:rotateY(0deg) skew(-10deg,-25deg) translateZ(300px);
+	animation-name:animation;
+	-webkit-animation-name:animation;
+	-webkit-animation-timing-function:linear;
+	animation-timing-function:linear;
+	-webkit-animation-iteration-count:infinite;
+	animation-iteration-count:infinite;
+	-webkit-animation-duration:8s;
+	animation-duration:3s;
+}
+@keyframes animation{
+	from {
+		transform:rotateY(0deg) translateZ(300px);	
+	}
+	to {
+		transform:rotateY(360deg) translateZ(300px);	
+	}
+}
+-webkit-@keyframes animation{
+	from {
+		transform:rotateY(0deg) translateZ(300px);	
+	}
+	to {
+		transform:rotateY(360deg) translateZ(300px);	
+	}
+}
