@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.box{
+	width: 100%;
+	margin: 0 auto;
+}
+#list{
+	list-style: none;
+	position: relative;
+	margin: 0 auto;
+}
+#list li{
+	float: left;
+	padding: 10px 0 0 10px;
+	background: #f0e5e5;
+}
+li div{
+	padding: 10px;
+	box-shadow: 0 0 8px #0c4c56;
+	background: #425758;
+}
+img{
+	width: 270px;
+	height: auto;
+}
