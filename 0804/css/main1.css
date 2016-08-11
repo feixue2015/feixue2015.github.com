@@ -45,11 +45,11 @@ body{
 
 }
 .right_btn{
-	background: url('../picture/right.png') no-repeat;
+	background: url('../pictures/right.png') no-repeat;
 	background-position:50% 50%;
 }
 .left_btn{
-	background: url('../picture/left.png') no-repeat;
+	background: url('../pictures/left.png') no-repeat;
 	background-position: 50% 50%;
 }
 .right_btn:hover{
