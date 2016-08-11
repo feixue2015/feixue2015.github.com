@@ -34,7 +34,7 @@ window.onload = function() {
 			changePage(1, field);
 			showContaint(1, field);
 
-			prveNext(prve[0], last[0], 1);
+			prveNext(prve[0], last[0], 1,field);
 			surebtn.onclick = function(e) {
 				e.preventDefault();
 				var page = Number(putpage.value);
