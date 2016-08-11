@@ -1,8 +1,39 @@
 window.onload=function(){
+  
 	var ulbox=document.getElementById('ulimage');
 	var leftbtn=document.getElementById('leftbtn');
 	var rightbtn=document.getElementById('rightbtn');
 	start(ulbox,leftbtn,rightbtn);
+  var timer=null;
+  timer=setInterval(function(){
+     var left=ulbox.style.left;
+    ulbox.style.left=parseInt(left)+600+'px';
+    if(parseInt(ulbox.style.left)>0){
+      ulbox.style.left='-2400px';
+    }
+        index++;
+        if(index==5){
+          index=0;
+        }
+        indexshow(index);
+  },3000);
+  ulbox.onmouseover=function(){
+    clearInterval(timer);
+  }
+  ulbox.onmouseout=function(){
+    timer=setInterval(function(){
+     var left=ulbox.style.left;
+    ulbox.style.left=parseInt(left)+600+'px';
+    if(parseInt(ulbox.style.left)>0){
+      ulbox.style.left='-2400px';
+    }
+        index++;
+        if(index==5){
+          index=0;
+        }
+        indexshow(index);
+  },3000);
+  }
 }
 function start (ulbox,leftbtn,rightbtn) {
 	leftbtn.onclick=function () {
