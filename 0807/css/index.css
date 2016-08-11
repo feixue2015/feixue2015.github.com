@@ -1,0 +1,40 @@
+@charset "utf-8";
+/*基本框架CSS*/
+body, ul, dl, dd, dt, ol, li, p, h1, h2, h3, h4, h5, h6, textarea, form, select, fieldset, table, td, div, input {margin:0;padding:0;-webkit-text-size-adjust: none}
+h1, h2, h3, h4, h5, h6{font-size:12px;font-weight:normal}
+body>div{margin:0 auto}
+div {text-align:left}
+a img {border:0}
+body { color: #333; text-align: center; font: 12px "宋体"; }
+ul, ol, li {list-style-type:none;vertical-align:0}
+a {outline-style:none;color:#535353;text-decoration:none}
+a:hover { color: #D40000; text-decoration: none}
+.clear{clear:both; height:0; overflow:hidden}
+/* 效果CSS开始 */
+.container{
+	padding: 0px 5px;
+}
+.container:before,  .container:after { content: ""; display: table; }
+.container:after { clear: both; }
+.item { float: left; margin-bottom: 5px;position: relative;}
+.item img { max-width: 100%; max-height: 100%; height: 200px; vertical-align: bottom; }
+.first-item { clear: both; }
+.last-row, .last-row ~ .item { margin-bottom: 0; }
+.item .title{
+	position: absolute;
+	left: 0;
+	bottom: -35px;
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	color: #fff;
+	z-index: 100;
+	overflow: hidden;
+	transition:bottom 2s;
+	-webkit-transition:bottom 2s;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#333));
+	background: -webkit-linear-gradient(transparent, #333);
+	background: -moz-linear-gradient(transparent, #333);
+	background: -o-linear-gradient(transparent, #333);
+	background: linear-gradient(transparent, #333);  /*// Safari 5.1 - 6.0  Opera 11.1 - 12.0  Firefox 3.6 - 15 */
+}
