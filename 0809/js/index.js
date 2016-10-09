@@ -24,7 +24,7 @@ window.onload=function () {
 	dispalybtn.onclick=function(){
 		confirm("确定要销毁飞船");
 		if (confirm) {
-			console.log(1);
+			boat1.remove();
 		};
 	}
 	//开始飞行
